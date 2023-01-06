@@ -14,7 +14,7 @@ const sounds = [
 for (let i in sounds) {
   let btn = document.createElement("button");
   btn.textContent = "♪";
-  btn.setAttribute("src", `/sounds/${sounds[i]}`);
+  btn.setAttribute("src", `./sounds/${sounds[i]}`);
   btn.onclick = () => {
     new Audio(`/sounds/${sounds[i]}`).play();
   };

@@ -16,11 +16,11 @@ for (let i in sounds) {
   btn.textContent = "♪";
   btn.setAttribute("src", `./sounds/${sounds[i]}`);
   btn.onclick = () => {
-    new Audio(`/sounds/${sounds[i]}`).play();
+    new Audio(`./sounds/${sounds[i]}`).play();
   };
   window.addEventListener("keydown", (event) => {
     if (event.isComposing || event.key == keys[i]) {
-      new Audio(`/sounds/${sounds[i]}`).play();
+      new Audio(`./sounds/${sounds[i]}`).play();
     } else null;
   });
   drumElement.append(btn);
